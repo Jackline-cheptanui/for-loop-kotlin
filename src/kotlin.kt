@@ -5,6 +5,36 @@ fun main() {
     name(10)
     name(16)
     place()
+    println(name.trimStart())
+    println(name.trimEnd())
+    println(name.trim())
+    println(k+p)
+    println("You are a teenager")
+    println("Have you been to kampala")
+
+    println(t)
+    println(m)
+    println(numArray[3])
+    println(numArray[0])
+    println(numArray[2])
+    println(numElement)
+    println(sumElement)
+    println(minvalue)
+    var man=Farmer("faith",22)
+    
+
+    val age=20
+
+    if(age>12){
+        println("You are a teenager")
+        println("You are not a teenager")
+
+    }
+    else{
+        println("you are not teenager")
+    }
+
+
 
 }
 fun digit(){
@@ -59,6 +89,107 @@ fun place(){
     }
 
 }
+class Car(var make:String,var model:String,var color:String,var capacity:Int){
+    fun carry(people:Int){
+        println("Our carring$people passager")
+        println("Over capacity by$people")
+
+
+    } 
+
+
+
+
+
+
+
+
+
+}
+
+
+// concatenation
+val name="timoty kemei"
+val k="my name is"
+val p="caroline"
+
+val person="sharon"
+val year="2000"
+val t="$person was born in $ year"
+//get an element in index
+var nameArray= arrayOf("sheila","kemei","ruth","naum")
+var m=nameArray.get(0)
+//creat array using arrayof
+var numArray= arrayOf(20,40,10,70,60,90,100)
+
+var numArrays= arrayOf(50,60,30,10,100,20,40,50)
+var numElement=numArray.count()
+var sumElement=numArray.sum()
+var minvalue=numArray.minOrNull()
+
+//
+class Farmer(var name:String,var age: Int){
+    fun eat(){
+        println("yaaam")
+
+    }
+    fun dig(){
+        println("dig dig dig")
+
+    }
+    fun sleep(){
+        println("waaaah")
+    }
+    fun talk(){
+        println("karibu kwa shamba")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
