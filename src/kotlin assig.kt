@@ -3,15 +3,15 @@ fun main() {
     println(isEven(7))
    println(isEven(9))
 
-    var shop=product("cabbage",10,20,"groceries")
-    println(shop.option())
+    var shop=product("matama",12,20,"grocerie")
+    shop.grouping()
 
-    var b=game("football")
-    print(b[0])
-    print(b[2])
-    print(b[4])
-    print(b[6])
-print(game("Banana"))
+
+
+
+
+
+println(game("mango"))
 
 
 
@@ -31,16 +31,16 @@ fun isEven(num:Int):Boolean {
 
 
 
-data class  product(var name:String,val weight:Int ,var price: Int,var category:String) {
-    fun  list(product:String){
+data class  product(var name:String,val weight:Int ,var price: Int,var category:String){
+    fun grouping(){
+        var grocerie=listOf<String>()
+        var hygiene= listOf<String>()
         when(category){
-          var  groceries-> listOf<String>()
-            var hygiene-> listOf<String>()
-            when(product)
+            "grocerie"->println(grocerie+name)
+            "hygiene"->println(hygiene+name)
+            else->println(name)
         }
     }
-
-
 }
 
 
@@ -59,10 +59,14 @@ fun game(name:String):String {
 
 
 
-}
-        fun student( name:String,Place:){
 
+        fun animal(name:Array<String>):ArrayList<String>{
+            var nameArray=ArrayList<String>()
+            return nameArray
         }
+
+
+
 
 
 
